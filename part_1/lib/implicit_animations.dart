@@ -42,10 +42,19 @@ class _ImplicitAnimationsState extends State<ImplicitAnimations> {
       children: [
         GestureDetector(
           onTap: _onBoxTap,
-          child: Container(
-            color: _color,
-            width: _size.width,
-            height: _size.height,
+          child: IgnorePointer(
+            ignoring: !_showBox,
+            child: AnimatedOpacity(
+              opacity: _showBox ? 1 : 0,
+              duration: const Duration(milliseconds: 300),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 600),
+                curve: Curves.elasticIn,
+                color: _color,
+                width: _size.width,
+                height: _size.height,
+              ),
+            ),
           ),
         ),
         const SizedBox(height: 20),

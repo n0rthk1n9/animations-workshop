@@ -12,7 +12,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData.dark(),
+      darkTheme:
+          ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.white),
       home: const Scaffold(
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
