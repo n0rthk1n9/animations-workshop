@@ -7,18 +7,28 @@ class ExplicitAnimations extends StatefulWidget {
   State<ExplicitAnimations> createState() => _ExplicitAnimationsState();
 }
 
-class _ExplicitAnimationsState extends State<ExplicitAnimations> with SingleTickerProviderStateMixin {
+class _ExplicitAnimationsState extends State<ExplicitAnimations>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override
   void initState() {
     super.initState();
     // initialize controllers/animations/listeners here
+    _controller = AnimationController(
+      vsync: this,
+      upperBound: 500,
+      duration: const Duration(milliseconds: 300),
+    );
+
+    _controller.addListener(_listener);
   }
 
   @override
   void dispose() {
     // don't forget to dispose of controllers/animations here, and remove listeners
+    _controller.removeListener(_listener);
+    _controller.dispose();
     super.dispose();
   }
 
@@ -34,9 +44,9 @@ class _ExplicitAnimationsState extends State<ExplicitAnimations> with SingleTick
       alignment: Alignment.center,
       children: [
         Positioned(
-          top: 0,
+          top: _controller.value,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: _onButtonPressed,
             child: const Text('Animate me!'),
           ),
         ),
