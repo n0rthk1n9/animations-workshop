@@ -4,7 +4,7 @@ In this kata we will make use of the knowledge we hopefully gathered from the pr
 
 ## bouncy_chips
 
-![Bouncy Chips](./bouncy_chip_solution.gif)
+https://github.com/user-attachments/assets/21852b76-af3c-43d1-8758-b0a5bd11bb45
 
 This challenge will teach you how to build a custom implicit animation, using a StatefulWidget and an AnimationController. You will also use one controller to drive multiple animations with different behaviour.
 
