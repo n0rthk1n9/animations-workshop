@@ -34,6 +34,8 @@ We added a time dilation factor to slow down the animation. You can remove it if
 
 ## animated_stack
 
+https://github.com/user-attachments/assets/d94df9a4-3adf-401c-b075-bb46a594a6dd
+
 This challenge is probably a known one and you might have seen it in different flavours for several use cases: stack components on top of each other and let them spread in order to see them all. Let us see how challenging it is to implement something like this with only making use of implicit animations! :)
 
 Feel free to add your own touch regarding which curve(s) to use and the overall speed of the animation - it is supposed to be a baseline example which can be implemented in many ways. Try to only make use of implicit animations though to show how far you can get by only making use of those!
