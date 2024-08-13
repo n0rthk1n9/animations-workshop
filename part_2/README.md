@@ -2,6 +2,8 @@
 
 In this kata we will make use of the knowledge we hopefully gathered from the previous exercise to combine several basic animation approaches to create real world examples which you might see in production apps out there. This should ideally show you how (relatively) simple we can create cool animations to enhance the user experience of our apps.
 
+We used `timeDilation` in each `main` method to slow down the animation. This makes it easier to copy and actually see the animation you are implementing. Feel free to change the value or get fully rid of it if you want to tweak the final result!
+
 ## bouncy_chips
 
 ![Bouncy Chips](./bouncy_chip_solution.gif)
