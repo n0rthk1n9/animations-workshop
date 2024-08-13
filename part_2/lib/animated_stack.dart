@@ -25,58 +25,60 @@ class _MainAppState extends State<MainApp> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const SizedBox(
-              width: 256.0,
-              height: 144.0,
-              child: Stack(
-                alignment: Alignment.topCenter,
-                children: [
-                  Positioned(
-                    top: 60.0,
-                    left: 0,
-                    right: 0,
-                    child: TripCard(
-                      icon: Icons.cell_tower,
-                      title: 'Eiffel Tower',
-                      subtitle: 'Paris',
-                      date: '5 August',
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const SizedBox(
+                width: 256.0,
+                height: 144.0,
+                child: Stack(
+                  alignment: Alignment.topCenter,
+                  children: [
+                    Positioned(
+                      top: 60.0,
+                      left: 0,
+                      right: 0,
+                      child: TripCard(
+                        icon: Icons.cell_tower,
+                        title: 'Eiffel Tower',
+                        subtitle: 'Paris',
+                        date: '5 August',
+                      ),
                     ),
-                  ),
-                  Positioned(
-                    top: 54.0,
-                    left: 0,
-                    right: 0,
-                    child: TripCard(
-                      icon: Icons.campaign,
-                      title: 'Concert',
-                      subtitle: 'Hamburg',
-                      date: '12 August',
+                    Positioned(
+                      top: 54.0,
+                      left: 0,
+                      right: 0,
+                      child: TripCard(
+                        icon: Icons.campaign,
+                        title: 'Concert',
+                        subtitle: 'Hamburg',
+                        date: '12 August',
+                      ),
                     ),
-                  ),
-                  Positioned(
-                    top: 48,
-                    left: 0,
-                    right: 0,
-                    child: TripCard(
-                      icon: Icons.girl,
-                      title: 'Meetup',
-                      subtitle: 'Berlin',
-                      date: '22 August',
+                    Positioned(
+                      top: 48,
+                      left: 0,
+                      right: 0,
+                      child: TripCard(
+                        icon: Icons.girl,
+                        title: 'Meetup',
+                        subtitle: 'Berlin',
+                        date: '22 August',
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: _toggleExpandedState,
-              child: Text(_expanded ? 'Hide' : 'Show All'),
-            ),
-          ],
+              ElevatedButton(
+                onPressed: _toggleExpandedState,
+                child: Text(_expanded ? 'Hide' : 'Show All'),
+              ),
+            ],
+          ),
         ),
       ),
     );
