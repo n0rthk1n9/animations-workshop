@@ -6,7 +6,7 @@ We used `timeDilation` in each `main` method to slow down the animation. This ma
 
 ## bouncy_chips
 
-![Bouncy Chips](./bouncy_chip_solution.gif)
+https://github.com/user-attachments/assets/21852b76-af3c-43d1-8758-b0a5bd11bb45
 
 This challenge will teach you how to build a custom implicit animation, using a StatefulWidget and an AnimationController. You will also use one controller to drive multiple animations with different behaviour.
 
@@ -35,6 +35,8 @@ Tips:
 We added a time dilation factor to slow down the animation. You can remove it if you want to see the animation at normal speed. The time dilation is part of the core framework and you could even use it in a production app ;)
 
 ## animated_stack
+
+https://github.com/user-attachments/assets/f95997ac-24b8-48e2-a29c-8265beda02a9
 
 This challenge is probably a known one and you might have seen it in different flavours for several use cases: stack components on top of each other and let them spread in order to see them all. Let us see how challenging it is to implement something like this with only making use of implicit animations! :)
 
