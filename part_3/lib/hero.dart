@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
               children: [
                 const Text('Home'),
                 Text(
-                  'PageTransition',
+                  'Hero',
                   style: Theme.of(context).textTheme.labelSmall,
                 ),
               ],
@@ -42,12 +42,12 @@ class MainApp extends StatelessWidget {
                 ),
                 const SizedBox(height: 24.0),
                 Text(
-                  'Let\'s do a PageTransition!',
+                  'Show me the Hero!',
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
                 const SizedBox(height: 12.0),
                 const Text(
-                  'This example will start off with the default one provided by MaterialPageRoute which will produce a known and common way of transitioning (navigating) form one page to another. Ultimately we want to have maximum freedom of how this transition will actually look like and behave! Give it a shot and see what kind of animations you can fit in there ;)',
+                  'We want to animate one element (which exists in both pages) to animate (fly-over) while we navigate to a new page! Depending on the page transition you have used, this can achieve very cool effects!',
                 ),
                 const SizedBox(height: 24.0),
                 Center(
@@ -81,7 +81,7 @@ class SecondPage extends StatelessWidget {
           children: [
             const Text('Second Page'),
             Text(
-              'PageTransition',
+              'Hero',
               style: Theme.of(context).textTheme.labelSmall,
             ),
           ],
