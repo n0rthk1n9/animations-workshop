@@ -8,7 +8,7 @@ We used `timeDilation` in each `main` method to slow down the animation. This ma
 
 ## page_transition.dart
 
-https://github.com/user-attachments/assets/21852b76-af3c-43d1-8758-b0a5bd11bb45
+https://github.com/user-attachments/assets/04e5a60f-1ac3-41ef-a11b-803420ce822e
 
 A page transition is a great way to talk about animations because the default behaviour we know of transitioning from one page to another is very often a animation. Especially on mobile apps we know this "swift" motion the pages do when transitioning. Instead of the default behaviour which often comes from MaterialPageRoute, let's try our own!
 
@@ -27,7 +27,7 @@ Suggested steps:
 
 ## hero.dart
 
-https://github.com/user-attachments/assets/f95997ac-24b8-48e2-a29c-8265beda02a9
+https://github.com/user-attachments/assets/07f61855-9c13-4409-9dbf-2ed39bc69704
 
 Also part of page transitions: the Hero widget! You might know this one already, but have you used it extensively? This widget is used to animate a "fly-over" of an existing widget on one page to the same widget on the new page while transitioning between pages. Combined with a custom PageTransition (but already with the default one), this can create cool animations for the user to grasp and allows to shift the focus on the specific elements in your app!
 
@@ -46,7 +46,7 @@ Suggested steps:
 
 ## scrolling.dart
 
-https://github.com/user-attachments/assets/f95997ac-24b8-48e2-a29c-8265beda02a9
+https://github.com/user-attachments/assets/17d3aa8e-a2b2-4ebc-858d-76acb16773ac
 
 Now let's use something else to animate on: scrolling! This is a cool trigger as this is something a user will do naturally to navigate the content of the app. Listening to the change of the scrolling element (like `ListView`) enables us to act on that and drive animations!
 
@@ -66,7 +66,7 @@ Suggested steps:
 
 ## scrolling_items.dart
 
-https://github.com/user-attachments/assets/f95997ac-24b8-48e2-a29c-8265beda02a9
+https://github.com/user-attachments/assets/1233c5e4-1439-4921-9733-bfe158db10aa
 
 NOTE: extra, more difficult challenge!
 
